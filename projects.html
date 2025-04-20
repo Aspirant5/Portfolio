@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+        
+        .project {
+            background-color: #fff;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project img {
+            width: 100%;
+            object-fit: contain;
+            background-color: #fff;
+            padding: 10px;
+        }
+        
+
+        .project-title {
+            padding: 15px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            text-decoration: none;
+            display: block;
+        }
+
+        .project-title:hover {
+            color: #0077cc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <h2 style="text-align: center; padding-top: 50px;">My Projects</h2>
+        <p style="text-align: center; font-size: 18px;">Explore the projects I've worked on so far</p>
+        
+        <div class="projects-container" data-aos="fade-up">
+            <!-- Project 1 -->
+            <div class="project" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/project1.jpg" alt="Gesture Vocalizer">
+                <a href="project1.html" class="project-title">Gesture Vocalizer</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/project2.jpg" alt="Supplier-Centric Stock Management System">
+                <a href="https://llamacoder.together.ai/share/v2/DTwmCX-o4UlV0Uo1" class="project-title">Supplier-Centric Stock Management System</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
